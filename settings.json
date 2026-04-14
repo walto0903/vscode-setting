@@ -61,4 +61,5 @@
     "gitlens.views.commitDetails.files.layout": "tree",
     "bookmarks.experimental.enableNewStickyEngine": false,
     "window.zoomLevel": 1,
+    "terminal.integrated.defaultLocation": "editor",
 }
