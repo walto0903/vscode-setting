@@ -1,40 +1,12 @@
-.DS_Store
-.com.microsoft.VSCode.*
-Cache/
-CachedConfigurations/
-CachedData/
-CachedExtensionVSIXs/
-CachedExtensions/
-CachedProfilesData/
-Code Cache/
-Cookies
-Cookies-journal
-Crashpad/
-CrashpadMetrics-active.pma
-CrashpadMetrics.pma
-DIPS
-DIPS-wal
-DawnCache/
-DawnGraphiteCache/
-DawnWebGPUCache/
-GPUCache/
-Local Storage/
-Network Persistent State
-Preferences
-Service Worker/
-Session Storage/
-Shared Dictionary/
-SharedStorage
-SharedStorage-wal
-TransportSecurity
-Trust Tokens
-Trust Tokens-journal
-User/
-VideoDecodeStats/
-WebStorage/
-code.lock
-languagepacks.json
-logs/
-machineid
-rapid_render.json
-shared_proto_db/
+# すべて無視
+*
+
+# 管理するファイルだけ許可
+!.gitignore
+!README.md
+!extensions
+!settings.json
+!export_plugins.zsh
+!import_plugins.zsh
+!export_settings.zsh
+!import_settings.zsh
