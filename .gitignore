@@ -10,3 +10,6 @@
 !import_plugins.zsh
 !export_settings.zsh
 !import_settings.zsh
+!keybindings.json
+!export_keybindings.zsh
+!import_keybindings.zsh

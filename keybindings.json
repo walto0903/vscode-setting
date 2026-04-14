@@ -1,0 +1,115 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "cmd+i",
+        "command": "composerMode.agent"
+    },
+    // ターミナルエディタがフォーカスされている場合はターミナルエディタを閉じる
+    {
+        "key": "cmd+w",
+        "command": "workbench.action.terminal.killEditor",
+        "when": "terminalEditorFocus"
+    },
+    // ターミナルパネルがフォーカスされている場合はターミナルパネルを閉じる
+    {
+        "key": "cmd+w",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus && !terminalEditorFocus"
+    },
+    // テキストエディタがフォーカスされている場合はエディタを閉じる
+    {
+        "key": "cmd+w",
+        "command": "workbench.action.closeActiveEditor",
+        "when": "editorTextFocus && !terminalFocus && !terminalEditorFocus"
+    },
+    // ファイルを右に分割
+    {
+        "key": "cmd+d",
+        "command": "workbench.action.splitEditorRight",
+        "when": "editorFocus"
+    },
+    // ファイルを下に分割
+    {
+        "key": "cmd+shift+d",
+        "command": "workbench.action.splitEditorDown",
+        "when": "editorFocus"
+
+    },
+    // フォントサイズを縮小
+    {
+        "key": "shift+cmd+[Minus]",
+        "command": "-workbench.action.zoomIn"
+    },
+    {
+        "key": "shift+cmd+[Minus]",
+        "command": "workbench.action.zoomOut"
+    },
+    {
+        "key": "cmd+[Minus]",
+        "command": "-workbench.action.zoomOut"
+    },
+    //  ターミナルの分割
+    {
+        "key": "cmd+d",
+        "command": "workbench.action.terminal.split",
+        "when": "terminalFocus && terminalProcessSupported || terminalFocus && terminalWebExtensionContributedProfile"
+    },
+    {
+        "key": "cmd+d",
+        "command": "-notebook.addFindMatchToSelection",
+        "when": "config.notebook.multiCursor.enabled && notebookCellEditorFocused && activeEditor == 'workbench.editor.notebook'"
+    },
+    {
+        "key": "cmd+d",
+        "command": "-editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus"
+    },
+    {
+        "key": "cmd+d",
+        "command": "-composer.toggleChatAsEditor",
+        "when": "composerFocused && !editorTextFocus"
+    },
+    {
+        "key": "cmd+d",
+        "command": "-extension.vim_cmd+d",
+        "when": "editorTextFocus && vim.active && vim.use<D-d> && !inDebugRepl"
+    },
+    // タブ間の移動
+    // NOTE: 同一グループ間の移動は「Option + Command + 矢印」で行えるが、異なるグループ間の移動は下記のショートカットキーで行う
+    {
+        "key": "cmd+alt+]",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+alt+[",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus"
+    },
+    // ファイルパスをクリップボードにコピー
+    {
+        "key": "cmd+r",
+        "command": "copyRelativeFilePath",
+        "when": "editorFocus"
+    },
+    // リモートリポジトリのURLをクリップボードにコピー
+    {
+        "key": "shift+cmd+r",
+        "command": "gitlens.copyRemoteFileUrlToClipboard"
+    },
+    {
+        "key": "cmd+alt+k",
+        "command": "bookmarks.toggle",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+alt+down",
+        "command": "bookmarks.jumpToNext",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+alt+up",
+        "command": "bookmarks.jumpToPrevious",
+        "when": "editorTextFocus"
+    }
+]
