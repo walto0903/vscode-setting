@@ -1,0 +1,64 @@
+{
+    "workbench.colorTheme": "Dark Modern",  // エディタのテーマ
+    "window.commandCenter": true,
+    "workbench.colorCustomizations": {
+    "editor.selectionBackground": "#3399ff",           // 選択範囲の背景色（複数行選択時も含む）
+    "editor.selectionHighlightBackground": "#99ccff"   // 補助的な選択範囲の色
+    },
+    "todohighlight.keywords": [
+        {
+            "text": "TODO:",
+            "color": "#ffffff",
+            "backgroundColor": "#ff0000"
+        },
+        {
+            "text": "NOTE:",
+            "color": "#ffffff",
+            "backgroundColor": "#0000ff"
+        },
+    ],
+    "vim.useSystemClipboard": true,      //  vim のヤンクコピーとOS機能のコピー & ペーストを同期
+    "database-client.autoSync": true,
+    "remote.SSH.remotePlatform": {
+        "comicdev-remote-server": "linux",
+        "comicdev-remote-server-viewer-dev": "linux"
+    },
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "remote.autoForwardPortsSource": "hybrid",
+    "typescript.updateImportsOnFileMove.enabled": "never",
+    "[dockercompose]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "advanced",
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": true
+        },
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[github-actions-workflow]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "grunt.autoDetect": "on",
+    "gulp.autoDetect": "on",
+    "jake.autoDetect": "on",
+    "gitlens.views.scm.grouped.views": {
+        "commits": true,
+        "branches": true,
+        "remotes": true,
+        "stashes": true,
+        "tags": true,
+        "worktrees": true,
+        "contributors": true,
+        "fileHistory": false,
+        "repositories": true,
+        "searchAndCompare": true,
+        "launchpad": false
+    },
+    "claudeCode.preferredLocation": "panel",
+    "gitlens.views.commitDetails.files.layout": "tree",
+    "bookmarks.experimental.enableNewStickyEngine": false,
+    "window.zoomLevel": 1,
+}
